@@ -153,3 +153,140 @@ table {
   font-weight: 900;
   font-style: normal;
 }
+
+/* Color Scheme */
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --third-color: #aaaaaa;
+  --rectangle-color: #f9faff;
+  --font-color: #242430;
+  --bg-color: linear-gradient(
+    to bottom,
+    rgba(18, 18, 21, 1) 0%,
+    rgba(38, 38, 41, 1) 100%
+  );
+  --heading-color: linear-gradient(
+    to bottom,
+    rgba(112, 0, 160, 1) 0%,
+    rgba(160, 0, 155, 1) 100%
+  );
+}
+
+/* Dark mode styles */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --third-color: #aaaaaa;
+    --font-color: #242430;
+    --bg-color: linear-gradient(
+      to bottom,
+      rgba(18, 18, 21, 1) 0%,
+      rgba(38, 38, 41, 1) 100%
+    );
+    --heading-color: linear-gradient(
+      to bottom,
+      rgba(112, 0, 160, 1) 0%,
+      rgba(160, 0, 155, 1) 100%
+    );
+  }
+}
+
+/* Index.html */
+
+.container {
+  width: 1440px;
+  height: 1024px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--bg-color);
+}
+
+.parent {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+  gap: 50px;
+}
+
+.acme {
+  width: 436px;
+  height: 77px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 15px;
+  flex-shrink: 0;
+  color: var(--primary-color);
+}
+
+.rectangle {
+  width: 1px;
+  height: 100%;
+  border-radius: 0px;
+  flex-shrink: 0;
+  color: var(--rectangle-color);
+}
+
+.child {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: start;
+  align-content: stretch;
+  justify-content: start;
+  gap: 24px;
+}
+
+.company {
+  width: 343px;
+  height: 65px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 54px;
+  font-weight: 100;
+  line-height: 1.2;
+  flex-shrink: 0;
+  color: var(--third-color);
+}
+
+.service {
+  width: 381px;
+  height: 65px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 54px;
+  font-weight: 100;
+  line-height: 1.2;
+  flex-shrink: 0;
+  color: var(--third-color);
+}
+
+.contact {
+  width: 234px;
+  height: 65px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 54px;
+  font-weight: 100;
+  line-height: 1.2;
+  flex-shrink: 0;
+  color: var(--third-color);
+}
