@@ -208,6 +208,7 @@ body {
   min-height: 100%;
   min-width: 100%;
   padding: 0;
+  background: var(--bg-color);
 }
 
 body {
@@ -230,7 +231,6 @@ body {
   align-content: stretch;
   justify-content: center;
   flex-shrink: 0;
-  background: var(--bg-color);
 }
 
 .main {
@@ -503,7 +503,7 @@ body {
 /* harmadik szekció( rólunk mondták) */
 
 .container3 {
-  width: 1440px;
+  max-width: 1440px;
   height: auto;
   background: var(--primary-color);
   gap: 50px;
@@ -513,6 +513,7 @@ body {
   align-items: center;
   align-content: stretch;
   justify-content: start;
+  padding: 80px 80px 80px 80px;
 }
 
 .aboutus {
@@ -552,18 +553,6 @@ body {
   align-content: stretch;
   justify-content: start;
   gap: 50px;
-}
-
-.column1 {
-  padding: 80px 0 80px 80px;
-}
-
-.column2 {
-  padding: 80px 0 80px 0;
-}
-
-.column3 {
-  padding: 80px 80px 80px 0;
 }
 
 .picture {
@@ -622,4 +611,47 @@ body {
 
 .szilvi .dezso {
   font-style: normal;
+}
+
+/* Negyedik szekció( bemutatkozás) */
+
+.container4 {
+  max-width: 1440px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+  gap: 80px;
+  padding: 80px 80px 80px 80px;
+}
+
+.about {
+  width: 251px;
+  height: 48px;
+  color: var(--primary-color);
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.textforus {
+  width: 100%;
+  height: 490px;
+  color: var(--primary-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.textforus p {
+  margin-bottom: 20px;
 }
