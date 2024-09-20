@@ -418,6 +418,12 @@ body {
   flex-shrink: 0;
 }
 
+.company2,
+.service2,
+.contact2 {
+  text-decoration: none;
+}
+
 .rectangle2 {
   width: 100%;
   height: 1px;
