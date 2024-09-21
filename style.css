@@ -711,6 +711,7 @@ body {
   font-weight: 700;
   line-height: 1;
   flex-shrink: 0;
+  text-decoration: none;
 }
 
 .service3 {
@@ -723,6 +724,7 @@ body {
   font-weight: 400;
   line-height: 1;
   flex-shrink: 0;
+  text-decoration: none;
 }
 
 /* Második szekció */
@@ -843,6 +845,19 @@ body {
 
 /* Első szekció ( Header ) */
 
+.company4 {
+  width: 160px;
+  height: 24px;
+  color: var(--third-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
 .service4 {
   width: 177px;
   height: 24px;
@@ -853,6 +868,7 @@ body {
   font-weight: 400;
   line-height: 1;
   flex-shrink: 0;
+  text-decoration: none;
 }
 
 .contact4 {
@@ -865,4 +881,72 @@ body {
   font-weight: 400;
   line-height: 1;
   flex-shrink: 0;
+  text-decoration: none;
 }
+
+/* Második szekció */
+
+.container7 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: stretch;
+  justify-content: center;
+  gap: 80px;
+  padding: 80px 80px 80px 80px;
+}
+
+.contactus {
+  width: 175px;
+  height: 48px;
+  color: var(--primary-color);
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: start;
+  align-content: stretch;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.contactme {
+  height: 749px;
+  color: var(--primary-color);
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  flex: 1;
+  flex-shrink: 0;
+  padding-left: 80px;
+}
+
+.livemap {
+  width: 470px;
+  height: 100%;
+  border-radius: 0px;
+  background: url(https://design.penpot.app/assets/by-file-media-id/3d04e89b-bff0-8115-8004-bc23a81e9fa4)
+    no-repeat center center / cover;
+  flex-shrink: 0;
+  padding-right: 80px;
+}
+
+.contactme p {
+  margin-bottom: 20px;
+}
+
+/* Harmadik szekció ( form ) */
