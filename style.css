@@ -725,24 +725,6 @@ body {
   flex-shrink: 0;
 }
 
-.contact3 {
-  width: 107px;
-  height: 24px;
-  color: var(--third-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1;
-  flex-shrink: 0;
-}
-
-.company3,
-.service3,
-.contact3 {
-  text-decoration: none;
-}
-
 /* Második szekció */
 
 .container5 {
@@ -856,3 +838,31 @@ body {
 
 /* Harmadik szekció ( Footer ) */
 /* megegyezik az ötödik szekció ( footer ) részével */
+
+/* kapcsolat.html */
+
+/* Első szekció ( Header ) */
+
+.service4 {
+  width: 177px;
+  height: 24px;
+  color: var(--third-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.contact4 {
+  width: 107px;
+  height: 24px;
+  color: var(--primary-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  flex-shrink: 0;
+}
