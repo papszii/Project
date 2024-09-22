@@ -1,5 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
+/* CSS Reset */
+v2.0 | 20110126
    License: none (public domain)
 */
 
@@ -129,42 +129,29 @@ table {
 }
 
 /* Font family */
-
 .roboto-thin {
   font-family: "Roboto", system-ui;
   font-weight: 100;
-  font-style: normal;
 }
 
 .roboto-regular {
   font-family: "Roboto", system-ui;
   font-weight: 400;
-  font-style: normal;
 }
 
 .roboto-bold {
   font-family: "Roboto", system-ui;
   font-weight: 700;
-  font-style: normal;
 }
 
 .roboto-black {
   font-family: "Roboto", system-ui;
   font-weight: 900;
-  font-style: normal;
 }
 
 /* Color Scheme */
-
 :root {
-  --primary-color: #ffffff;
-  --secondary-color: #000000;
-  --third-color: #aaaaaa;
-  --rectangle-color: #f9faff;
-  --rectangle2-color: #b1b2b5;
   --aboutus-color: #242430;
-  --introduction-color: #7000a0;
-  --form-color: #888888;
   --bg-color: linear-gradient(
     to bottom,
     rgba(18, 18, 21, 1) 0%,
@@ -175,20 +162,19 @@ table {
     rgba(112, 0, 160, 1) 0%,
     rgba(160, 0, 155, 1) 100%
   );
+  --form-color: #888888;
+  --introduction-color: #7000a0;
+  --primary-color: #ffffff;
+  --rectangle-color: #f9faff;
+  --rectangle2-color: #b1b2b5;
+  --secondary-color: #000000;
+  --third-color: #aaaaaa;
 }
 
 /* Dark mode styles */
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary-color: #ffffff;
-    --secondary-color: #000000;
-    --third-color: #aaaaaa;
-    --rectangle-color: #f9faff;
-    --rectangle2-color: #b1b2b5;
     --aboutus-color: #242430;
-    --introduction-color: #7000a0;
-    --form-color: #888888;
     --bg-color: linear-gradient(
       to bottom,
       rgba(18, 18, 21, 1) 0%,
@@ -199,14 +185,18 @@ table {
       rgba(112, 0, 160, 1) 0%,
       rgba(160, 0, 155, 1) 100%
     );
+    --form-color: #888888;
+    --introduction-color: #7000a0;
+    --primary-color: #ffffff;
+    --rectangle-color: #f9faff;
+    --rectangle2-color: #b1b2b5;
+    --secondary-color: #000000;
+    --third-color: #aaaaaa;
   }
 }
 
 /* Main style */
-
 html {
-  width: auto;
-  height: auto;
   background: var(--primary-color);
   display: flex;
   flex-direction: row;
@@ -214,13 +204,11 @@ html {
   align-items: start;
   align-content: stretch;
   justify-content: start;
-  padding: 0px 0px 0px 0px;
+  padding: 0;
 }
 
 body {
-  width: 1440px;
-  height: auto;
-  border-radius: 0px 0px 0px 0px;
+  border-radius: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -231,10 +219,7 @@ body {
 }
 
 /* Index.html */
-
 .container {
-  width: 1440px;
-  height: 1024px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -245,8 +230,6 @@ body {
 }
 
 .main {
-  width: auto;
-  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -257,31 +240,22 @@ body {
 }
 
 .acme {
-  width: 436px;
-  height: 77px;
   font-family: "Roboto";
-  font-style: normal;
   font-size: 64px;
   font-weight: 900;
   line-height: 1.2;
   letter-spacing: 15px;
-  flex-shrink: 0;
   color: var(--primary-color);
 }
 
 .rectangle {
   width: 1px;
-  height: 100%;
   min-height: 243px;
-  border-radius: 0px;
-  flex-shrink: 0;
   background: var(--rectangle-color);
   box-sizing: border-box;
 }
 
 .section {
-  width: auto;
-  height: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -303,34 +277,27 @@ body {
 
 .company {
   width: 343px;
-  height: 65px;
 }
 
 .service {
   width: 381px;
-  height: 65px;
 }
 
 .contact {
   width: 234px;
-  height: 65px;
 }
 
-/* Céginformació.html */
-
-/* első szekció ( header, navbar) */
-
+/* company.html */
+/* first section ( header, navbar) */
 .container2 {
   width: 1440px;
   height: auto;
-  border-radius: 0px 0px 0px 0px;
+  border-radius: 0;
   background: var(--bg-color);
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   align-items: center;
-  align-content: stretch;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .top {
@@ -338,10 +305,8 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: start;
-  align-content: stretch;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .top2 {
@@ -349,24 +314,17 @@ body {
   height: 80px;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   align-items: center;
-  align-content: stretch;
   justify-content: space-between;
-  flex-shrink: 0;
-  padding: 0px 32px 0px 32px;
+  padding: 0 32px;
 }
 
 .logo {
   width: 832px;
   height: 80px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   align-items: center;
-  align-content: stretch;
-  justify-content: start;
-  flex-shrink: 0;
+  justify-content: flex-start;
 }
 
 .logo2 {
@@ -374,120 +332,69 @@ body {
   height: 40px;
   color: var(--primary-color);
   font-family: "Roboto";
-  font-style: normal;
   font-size: 40px;
   font-weight: 100;
   line-height: 1;
-  flex-shrink: 0;
 }
 
 .navigation {
   width: auto;
   height: 80px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   align-items: center;
-  align-content: stretch;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 50px;
-}
-
-.company2 {
-  width: 160px;
-  height: 24px;
-  color: var(--primary-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1;
-  flex-shrink: 0;
-}
-
-.service2 {
-  width: 177px;
-  height: 24px;
-  color: var(--third-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1;
-  flex-shrink: 0;
-}
-
-.contact2 {
-  width: 107px;
-  height: 24px;
-  color: var(--third-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1;
-  flex-shrink: 0;
 }
 
 .company2,
 .service2,
 .contact2 {
+  width: 160px;
+  height: 24px;
+  color: var(--third-color);
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
   text-decoration: none;
+}
+
+.company2 {
+  font-weight: 700;
+  color: var(--primary-color);
 }
 
 .rectangle2 {
   width: 100%;
   height: 1px;
-  border-radius: 0px;
-  flex-shrink: 0;
   background: var(--rectangle2-color);
-  flex-shrink: 0;
 }
 
-/* második szekció(laptop img) */
-
+/* second section (laptop img) */
 .website {
   width: 100%;
-  height: auto;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: start;
-  align-content: stretch;
-  justify-content: start;
+  align-items: flex-start;
 }
 
 .image1 {
-  width: auto;
-  height: auto;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: start;
-  align-content: stretch;
-  justify-content: start;
-  padding: 80px 80px 80px 80px;
+  padding: 80px;
 }
 
 .image {
   background: url(https://design.penpot.app/assets/by-file-media-id/4192f1dd-455b-8162-8004-bbf59862bd9c)
     no-repeat center center / cover;
-  flex-shrink: 0;
   width: 628px;
   height: 471px;
-  border-radius: 0px;
 }
 
 .services {
   width: 652px;
   height: 471px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: end;
-  align-content: stretch;
-  justify-content: end;
-  flex-shrink: 0;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .servicebottom {
@@ -495,42 +402,28 @@ body {
   height: 30px;
   color: var(--primary-color);
   font-family: "Roboto";
-  font-style: normal;
   font-size: 30px;
   font-weight: 400;
-  line-height: 1;
-  flex-shrink: 0;
 }
 
 .text {
-  width: 3px;
-  height: 0.01px;
   position: absolute;
   left: 529px;
   top: 236px;
   color: var(--primary-color);
   font-family: "Roboto";
-  font-style: normal;
   font-size: 120px;
-  font-weight: 400;
   line-height: 1.2;
-  flex-shrink: 0;
 }
 
-/* harmadik szekció( rólunk mondták) */
-
+/* third section ( about us) */
 .container3 {
   max-width: 1440px;
-  height: auto;
   background: var(--primary-color);
-  gap: 50px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   align-items: center;
-  align-content: stretch;
-  justify-content: start;
-  padding: 80px 80px 80px 80px;
+  padding: 80px;
 }
 
 .aboutus {
@@ -538,22 +431,15 @@ body {
   height: 48px;
   color: var(--aboutus-color);
   font-family: "Roboto";
-  font-style: normal;
   font-size: 40px;
-  font-weight: 400;
   line-height: 1.2;
-  flex-shrink: 0;
   padding-top: 80px;
   text-align: center;
 }
 
 .row {
   width: 100%;
-  height: 513px;
   display: flex;
-  flex-wrap: nowrap;
-  align-items: start;
-  align-content: stretch;
   justify-content: space-between;
   gap: 50px;
 }
@@ -562,25 +448,17 @@ body {
 .column2,
 .column3 {
   width: 393.33px;
-  height: 513px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   align-items: center;
-  align-content: stretch;
-  justify-content: start;
   gap: 50px;
 }
 
 .picture {
   width: 168px;
   height: 168px;
-  border-radius: 500px;
-  background: url(https://design.penpot.app/assets/by-file-media-id/4192f1dd-455b-8162-8004-bc2cbfb3126c)
-    no-repeat center center / cover;
+  border-radius: 50%;
   background: url(https://design.penpot.app/assets/by-file-media-id/3d04e89b-bff0-8115-8004-bc2cd8553229)
-    no-repeat center center / cover;
-  background: url(https://design.penpot.app/assets/by-file-media-id/3d04e89b-bff0-8115-8004-bc2d0085e643)
     no-repeat center center / cover;
 }
 
@@ -592,9 +470,7 @@ body {
   color: var(--aboutus-color);
   font-family: "Roboto";
   font-size: 30px;
-  font-weight: 400;
   line-height: 1.2;
-  align-self: start;
 }
 
 .rita {
@@ -607,11 +483,8 @@ body {
   height: 29px;
   color: var(--introduction-color);
   font-family: "Roboto";
-  font-style: normal;
   font-size: 24px;
-  font-weight: 400;
   line-height: 1.2;
-  align-self: end;
 }
 
 .member1 {
@@ -626,23 +499,14 @@ body {
   width: 117px;
 }
 
-.szilvi .dezso {
-  font-style: normal;
-}
-
-/* Negyedik szekció( bemutatkozás) */
-
+/* Fourth section ( Introduction) */
 .container4 {
   max-width: 1440px;
-  height: auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   align-items: center;
-  align-content: stretch;
-  justify-content: center;
   gap: 80px;
-  padding: 80px 80px 80px 80px;
+  padding: 80px;
 }
 
 .about {
@@ -652,9 +516,6 @@ body {
   font-family: "Roboto";
   font-style: italic;
   font-size: 40px;
-  font-weight: 400;
-  line-height: 1.2;
-  flex-shrink: 0;
 }
 
 .textforus {
@@ -662,28 +523,21 @@ body {
   height: 490px;
   color: var(--primary-color);
   font-family: "Roboto";
-  font-style: normal;
   font-size: 24px;
-  font-weight: 400;
   line-height: 1.2;
-  flex-shrink: 0;
 }
 
 .textforus p {
   margin-bottom: 20px;
 }
 
-/* ötödik szekció ( footer ) */
-
+/* Fifth section ( footer ) */
 .footer {
   width: 100%;
   height: 300px;
   background: var(--footer-color);
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   align-items: center;
-  align-content: stretch;
   justify-content: center;
 }
 
@@ -692,80 +546,59 @@ body {
   height: 144px;
   color: var(--primary-color);
   font-family: "Roboto";
-  font-style: normal;
   font-size: 120px;
-  font-weight: 400;
-  line-height: 1.2;
   letter-spacing: 200px;
 }
 
-/* Szolgaltatasok.html */
-
-/* Első szekció ( Header ) */
+/* Services.html */
+/* First section (Header) */
+.company3,
+.service3,
+.offer,
+.description {
+  font-family: "Roboto";
+  color: var(--third-color);
+  font-size: 24px;
+  line-height: 1;
+}
 
 .company3 {
   width: 160px;
-  height: 24px;
-  color: var(--third-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 24px;
   font-weight: 700;
-  line-height: 1;
-  flex-shrink: 0;
-  text-decoration: none;
 }
 
 .service3 {
   width: 177px;
-  height: 24px;
-  color: var(--primary-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 24px;
   font-weight: 400;
-  line-height: 1;
-  flex-shrink: 0;
-  text-decoration: none;
 }
-
-/* Második szekció */
 
 .container5 {
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   align-items: center;
-  align-content: stretch;
   justify-content: center;
   gap: 80px;
-  padding: 80px 80px 160px 80px;
+  padding: 80px;
 }
 
 .ourservice {
   width: 289px;
-  height: 48px;
-  color: var(--primary-color);
   font-family: "Roboto";
   font-style: italic;
   font-size: 40px;
   font-weight: 400;
   line-height: 1.2;
-  letter-spacing: 0px;
+  color: var(--primary-color);
 }
 
 .container5a,
 .container5b {
   width: 1280px;
-  height: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: start;
-  align-content: stretch;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 50px;
 }
 
@@ -775,130 +608,98 @@ body {
 .flexbox4,
 .flexbox5,
 .flexbox6 {
-  height: auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   align-items: center;
-  align-content: stretch;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 32px;
   flex: 1;
 }
 
+.vector1,
+.vector2,
+.vector3,
+.vector4,
+.vector5,
+.vector6 {
+  height: 64px;
+}
+
 .vector1 {
   width: 125px;
-  height: 64px;
 }
-
 .vector2 {
   width: 58px;
-  height: 64px;
 }
-
 .vector3 {
   width: 85px;
-  height: 64.01px;
 }
-
 .vector4 {
   width: 57px;
-  height: 64px;
 }
-
 .vector5 {
   width: 66px;
-  height: 64px;
 }
-
 .vector6 {
   width: 55px;
-  height: 64px;
 }
 
 .offer {
   width: 100%;
-  height: 58px;
-  color: var(--primary-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 0px;
 }
 
 .description {
   width: 100%;
-  height: 144px;
-  color: var(--primary-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 24px;
   font-weight: 400;
   line-height: 1.2;
-  letter-spacing: 0;
 }
 
-/* Harmadik szekció ( Footer ) */
-/* megegyezik az ötödik szekció ( footer ) részével */
+/* contact.html */
 
-/* kapcsolat.html */
+/* First section ( Header ) */
 
-/* Első szekció ( Header ) */
-
-.company4 {
-  width: 160px;
-  height: 24px;
+.company4,
+.service4,
+.contact4 {
   color: var(--third-color);
   font-family: "Roboto";
   font-style: normal;
   font-size: 24px;
-  font-weight: 700;
   line-height: 1;
   flex-shrink: 0;
   text-decoration: none;
+}
+
+.company4 {
+  width: 160px;
+  height: 24px;
+  font-weight: 700;
 }
 
 .service4 {
   width: 177px;
   height: 24px;
-  color: var(--third-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 24px;
   font-weight: 400;
-  line-height: 1;
-  flex-shrink: 0;
-  text-decoration: none;
 }
 
 .contact4 {
   width: 107px;
   height: 24px;
   color: var(--primary-color);
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1;
-  flex-shrink: 0;
-  text-decoration: none;
 }
 
-/* Második szekció */
+/* second section */
 
 .container7 {
-  width: 100%;
-  height: auto;
+  width: 1440px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   align-items: center;
-  align-content: stretch;
   justify-content: center;
   gap: 80px;
-  padding: 80px 80px 80px 80px;
+  padding: 80px;
 }
 
 .contactus {
@@ -908,18 +709,14 @@ body {
   font-family: "Roboto";
   font-style: italic;
   font-size: 40px;
-  font-weight: 400;
   line-height: 1.2;
+  font-weight: 400;
 }
 
 .map {
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: start;
-  align-content: stretch;
   justify-content: space-between;
   gap: 80px;
 }
@@ -933,17 +730,15 @@ body {
   font-weight: 700;
   line-height: 1.2;
   flex: 1;
-  flex-shrink: 0;
   padding-left: 80px;
 }
 
 .livemap {
   width: 470px;
   height: 100%;
-  border-radius: 0px;
+  border-radius: 0;
   background: url(https://design.penpot.app/assets/by-file-media-id/3d04e89b-bff0-8115-8004-bc23a81e9fa4)
     no-repeat center center / cover;
-  flex-shrink: 0;
   padding-right: 80px;
 }
 
@@ -951,45 +746,35 @@ body {
   margin-bottom: 20px;
 }
 
-/* Harmadik szekció ( form ) */
+/* Third Section (form) */
 
 .user-form {
   width: 100%;
-  height: auto;
   background: var(--primary-color);
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: end;
-  align-content: stretch;
-  justify-content: start;
+  align-items: flex-end;
+  justify-content: flex-start;
   gap: 32px;
-  padding: 80px 80px 80px 80px;
+  padding: 80px;
 }
 
 .form-group {
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: start;
-  align-content: stretch;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 100px;
 }
 
 .username,
 .email,
 .mobile {
-  height: auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: start;
-  align-content: stretch;
-  justify-content: start;
   flex: 1;
+  align-items: flex-start;
 }
 
 .name,
@@ -997,11 +782,9 @@ body {
 .number {
   color: var(--aboutus-color);
   font-family: "Roboto";
-  font-style: normal;
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
-  letter-spacing: 0;
   flex-shrink: 0;
 }
 
@@ -1023,7 +806,6 @@ body {
 .rectangle3 {
   width: 100%;
   height: 3px;
-  border-radius: 0px;
   background: var(--introduction-color);
 }
 
@@ -1032,7 +814,6 @@ body {
 #mobile {
   width: 100%;
   height: 50px;
-  border-radius: 0px;
   background: var(--form-color);
 }
 
@@ -1042,39 +823,20 @@ body {
 
 .message {
   width: 100%;
-  height: auto;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: start;
-  align-content: stretch;
-  justify-content: start;
-  gap: 100px;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  padding-left: 80px;
 }
 
 .container8 {
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: start;
-  align-content: stretch;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 100px;
-}
-
-.message {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: start;
-  align-content: stretch;
-  justify-content: start;
-  gap: 16px;
-  flex: 1;
-  padding-left: 80px;
 }
 
 .message2 {
@@ -1082,28 +844,21 @@ body {
   height: 24px;
   color: var(--aboutus-color);
   font-family: "Roboto";
-  font-style: normal;
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
-  letter-spacing: 0px;
 }
 
 .rectangle4box {
   width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: start;
-  align-content: stretch;
-  justify-content: start;
+  align-items: flex-start;
 }
 
 #rectangle {
   width: 100%;
   height: 120px;
-  border-radius: 0px;
   background: var(--form-color);
   flex-shrink: 0;
 }
@@ -1111,10 +866,5 @@ body {
 .rectangle4 {
   width: 100%;
   height: 3px;
-  border-radius: 0px;
   background: var(--introduction-color);
 }
-
-/* Negyedik szekció (Footer) */
-
-/* megegyezik az ötödik szekció ( footer ) részével */
