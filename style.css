@@ -302,6 +302,11 @@ body {
 
 /* company.html */
 /* first section ( header, navbar) */
+
+.hamburger {
+  display: none;
+}
+
 .container2 {
   width: auto;
   height: auto;
@@ -948,4 +953,295 @@ body {
 
 .send:hover {
   background-color: #0056b3;
+}
+
+/* Responsive layout */
+
+/* Media Query for Mobile Devices */
+
+/* index.html */
+
+@media (max-width: 375px) {
+  html {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: start;
+    align-content: stretch;
+    justify-content: start;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .indexbody {
+    width: 375px;
+    height: 667px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+    gap: 50px;
+    background: none;
+  }
+
+  .acme {
+    color: var(--footer-text-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 10px;
+    text-decoration: none;
+    text-transform: none;
+  }
+
+  .rectangle {
+    width: 100%;
+    height: 1px;
+    min-height: 1px;
+    color: var(--footer-color);
+  }
+
+  .section {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    gap: 24px;
+  }
+
+  .company,
+  .service,
+  .contact {
+    font-size: 36px;
+    width: auto;
+    text-align: center;
+  }
+
+  /* company.html */
+
+  .companybody {
+    width: 375px;
+    height: auto;
+    border-radius: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+  }
+  .container2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: start;
+    align-content: stretch;
+    justify-content: start;
+  }
+  .company2,
+  .service2,
+  .contact2 {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    width: 48px;
+    height: 48px;
+  }
+  .top {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-between;
+    padding: 0px 24px 0px 24px;
+  }
+  .logo {
+    width: 375px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-between;
+    flex: 1;
+  }
+  .logo2 {
+    width: 178px;
+    height: 40px;
+    color: var(--footer-text-color);
+  }
+
+  .website {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: start;
+    align-content: stretch;
+    justify-content: start;
+  }
+  .image1 {
+    width: 375px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: start;
+    align-content: stretch;
+    justify-content: start;
+    flex: 1;
+    padding: 0px;
+  }
+  .image {
+    width: 375px;
+    height: 100%;
+    border-radius: 0px;
+    background: url(https://design.penpot.app/assets/by-file-media-id/4192f1dd-455b-8162-8004-bbf59862bd9c)
+      no-repeat center center / cover;
+    flex: 1;
+  }
+  .services,
+  .servicebottom {
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+  .text {
+    width: 303px;
+    height: 120px;
+    left: 55px;
+    top: 113px;
+    color: var(--footer-text-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0;
+    display: flex;
+  }
+  .text2 {
+    width: 303px;
+    height: 120px;
+    left: 115px;
+    top: 172px;
+    position: absolute;
+    color: var(--footer-text-color);
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0;
+    display: flex;
+  }
+  .rita,
+  .szilvi,
+  .dezso {
+    align-self: start;
+  }
+  .member1,
+  .member2,
+  .member3 {
+    align-self: end;
+  }
+  .container3 {
+    width: 100%;
+    height: auto;
+    background: var(--footer-text-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    gap: 32px;
+    padding: 0px;
+  }
+  .row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: start;
+    align-content: stretch;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    gap: 50px;
+  }
+  .container4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+    row-gap: 32px;
+    column-gap: 80px;
+    padding: 0px;
+  }
+  .textforus {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+  }
+  .footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+  }
+  .sign {
+    width: 261px;
+    height: 48px;
+    font-size: 40px;
+    letter-spacing: 50px;
+  }
 }
