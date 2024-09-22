@@ -1079,7 +1079,7 @@ body {
     align-items: center;
     align-content: stretch;
     justify-content: space-between;
-    padding: 0px 24px 0px 24px;
+    padding: 0px;
   }
   .logo {
     width: 375px;
@@ -1091,11 +1091,20 @@ body {
     align-content: stretch;
     justify-content: space-between;
     flex: 1;
+    padding: 24px;
   }
   .logo2 {
     width: 178px;
     height: 40px;
     color: var(--footer-text-color);
+  }
+  .aboutus {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .about {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   .website {
@@ -1212,6 +1221,7 @@ body {
   }
   .container4 {
     width: 100%;
+    max-width: 375px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -1219,12 +1229,11 @@ body {
     align-items: center;
     align-content: stretch;
     justify-content: center;
-    row-gap: 32px;
-    column-gap: 80px;
     padding: 0px;
+    gap: 0px;
   }
   .textforus {
-    width: 100%;
+    width: 75%;
     height: auto;
     font-size: 18px;
   }
