@@ -170,6 +170,7 @@ table {
   --secondary-color: #000000;
   --third-color: #444444;
   --footer-text-color: #ffffff;
+  --svg-icon-color: #121215;
 }
 
 /* Dark mode styles */
@@ -194,6 +195,7 @@ table {
     --secondary-color: #000000;
     --third-color: #aaaaaa;
     --footer-text-color: #ffffff;
+    --svg-icon-color: none;
   }
 }
 
@@ -650,9 +652,9 @@ body {
 .vector5,
 .vector6 {
   height: 64px;
-  background: var(--primary-color);
   fill-rule: evenodd;
   clip-rule: evenodd;
+  background: var(--svg-icon-color);
 }
 
 .vector1 {
@@ -1252,5 +1254,90 @@ body {
     height: 48px;
     font-size: 40px;
     letter-spacing: 50px;
+  }
+
+  /* services.html */
+
+  .company3,
+  .service3,
+  .contact3 {
+    display: none;
+  }
+
+  .servicebody {
+    width: 375px;
+    height: auto;
+    border-radius: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+  }
+
+  .container5 {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+    gap: 64px;
+    padding: 32px 32px 32px 32px;
+  }
+
+  .ourservice {
+    width: 289px;
+    height: 48px;
+  }
+
+  .container5a,
+  .container5b {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: start;
+    align-content: stretch;
+    justify-content: start;
+    gap: 50px;
+  }
+
+  .flexbox1,
+  .flexbox2,
+  .flexbox3,
+  .flexbox4,
+  .flexbox5,
+  .flexbox6 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: start;
+    gap: 32px;
+  }
+
+  .vector1,
+  .vector2,
+  .vector3,
+  .vector4,
+  .vector5,
+  .vector6 {
+  }
+
+  .offer {
+    color: var(--footer-text-color);
+    width: 80%;
+  }
+
+  .description {
+    color: var(--footer-text-color);
   }
 }
