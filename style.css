@@ -1,4 +1,4 @@
-/* CSS Reset */
+/* CSS Reset
 v2.0 | 20110126
    License: none (public domain)
 */
@@ -197,6 +197,8 @@ table {
 
 /* Main style */
 html {
+  width: auto;
+  height: auto;
   background: var(--primary-color);
   display: flex;
   flex-direction: row;
@@ -220,13 +222,15 @@ body {
 
 /* Index.html */
 .container {
+  width: 1440px;
+  height: 1024px;
+  background: var(--bg-color);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   align-content: stretch;
   justify-content: center;
-  flex-shrink: 0;
 }
 
 .main {
@@ -246,6 +250,7 @@ body {
   line-height: 1.2;
   letter-spacing: 15px;
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 .rectangle {
@@ -290,33 +295,26 @@ body {
 /* company.html */
 /* first section ( header, navbar) */
 .container2 {
-  width: 1440px;
-  height: auto;
-  border-radius: 0;
-  background: var(--bg-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.top {
   width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: start;
+  align-content: stretch;
+  justify-content: start;
 }
 
-.top2 {
-  max-width: 1440px;
+.top {
+  width: 1440px;
   height: 80px;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
+  align-content: stretch;
   justify-content: space-between;
-  padding: 0 32px;
+  padding: 0px 32px 0px 32px;
 }
 
 .logo {
@@ -335,6 +333,7 @@ body {
   font-size: 40px;
   font-weight: 100;
   line-height: 1;
+  text-decoration: none;
 }
 
 .navigation {
@@ -404,6 +403,7 @@ body {
   font-family: "Roboto";
   font-size: 30px;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .text {
@@ -730,7 +730,6 @@ body {
   font-weight: 700;
   line-height: 1.2;
   flex: 1;
-  padding-left: 80px;
 }
 
 .livemap {
